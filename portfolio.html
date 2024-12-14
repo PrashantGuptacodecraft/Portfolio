@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Portfolio">
+    <title>Portfolio</title>
+    <link href="https://t3.ftcdn.net/jpg/06/21/65/90/360_F_621659086_6mcq5SwsLmPokc5Twk6guo4RbgefYobS.jpg" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: #282c34;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ff6347;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            max-width: 600px;
+        }
+
+        .hero a {
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: #ff6347;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .hero a:hover {
+            background: #e5533f;
+        }
+
+        .about, .projects, .contact {
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about h2, .projects h2, .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            margin: 1rem 0;
+        }
+
+        .projects .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project {
+            flex: 1 1 calc(33.333% - 2rem);
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #282c34;
+            color: white;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+   
+    <section style="background-color: rgb(51, 64, 64);"  class="hero">
+        <div style="height: 200px; width: 200px; border-radius: 50%; background-color: antiquewhite; overflow: hidden;">
+            <img src="profile2.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+          </div>
+          
+       
+
+
+        <h1 style="color: gold;">Hi,Myself Prashant Gupta,<br> I'm a Student at KIET Ghaziabad</h1>
+        <p style="color: #ff6347;">I am a web developer proficient in HTML, CSS, and C, currently learning JavaScript. Let's create amazing web experiences together!</p>
+        <a href="#contact">Get in Touch</a>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p2>PRASHANT GUPTA <br>
+            2428CSE2142
+
+        </p2>
+        <p>I am a dedicated student at KIET Ghaziabad with a strong foundation in web development. I have expertise in HTML, CSS, and C programming, and I am currently honing my skills in JavaScript to build dynamic and interactive web applications.</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Project</h2>
+        <div style="background-color: aqua;" class="project">
+            <img src="my web.png" style="height: 150px;width: 150px;"  alt="Project 1">
+            <h3>Shopping Website</h3>
+            <p>A Shopping website to showcase my skills and projects, built with HTML and CSS.</p>
+        </div>
+        <div style="background-color: aqua;" class="project">
+            <img src="infinite2.jpg"  style="height: 150px;width: 150px;" alt="Project ">
+            <h3>INFINITE MESH</h3>
+            <p style="text-align: center;">This website contain many web pages ,user friendly shoping and multiple things image dowonloader.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me 
+        <h4>9838693305</h4></h2>
+        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+        <p>Email: <a href="prashant.2428cse2142@kiet.edu">prashant.2428cse2142@ekiet.edu</a></p>
+        <p>Email: <a href="prashant.2428cse2142@kiet.edu">adityagupta983869@gmail.com</a></p>
+        <p>Email: <a href="https://www.linkedin.com/in/prashant-gupta-923885328">My Linkedin I'd</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KIET Ghaziabad Student. All Rights Reserved.</p>
+        <p>Built with ❤️ and dedication.</p>
+    </footer>
+</body>
+</html>
